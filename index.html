@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Bud</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.0-web/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  </head>
+  <body>
+    <section class="section-center">
+      <!-- form -->
+      <form class="grocery-form">
+        <p class="alert"></p>
+        <h3 class="fs-1">Grocery Bud</h3>
+        <div class="form-control">
+          <input type="text" id="grocery" placeholder="e.g. eggs" />
+          <button type="submit" class="submit-btn btn-primary">submit</button>
+        </div>
+      </form>
+      <!-- list -->
+      <div class="grocery-container">
+        <div class="grocery-list">
+          <article class="grocery-item">
+            <p class="title">item</p>
+            <div class="btn-container text-primary">
+              <button type="button" aria-label="btn" class="edit-btn btn btn-sucess">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button type="button" aria-label="btn" class="delete-btn btn btn-warning">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+        <button type="button" class="clear-btn btn btn-outline-primary">clear items</button>
+      </div>
+    </section>
+    <!-- Optional javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
